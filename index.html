@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORIBRED</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="./logo_orbired.png" alt="Logo" class="logo-login">
+    <h2>Bienvenido</h2>
+    <form>
+      <label for="usuario">Usuario</label>
+      <input id="usuario" type="text"  required />
+      <label for="contraseña">Contraseña</label>
+      <input id="contraseña" type="password"  required />
+
+      <div class="switch-container">
+        <label class="switch">
+          <input type="checkbox" id="recuerdame" />
+          <span class="slider"></span>
+        </label>
+        <label for="recuerdame" class="switch-label">Recuérdame</label>
+      </div>
+      
+      <button type="submit">Iniciar sesión</button>
+      <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+    </form>
+  </div>
+</body>
+</html>

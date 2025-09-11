@@ -1,0 +1,149 @@
+body {
+  background: #F3F5F5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.login-container {
+  width: 350px;
+  padding: 40px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-left: 20px;
+  background: #fff;
+}
+.login-container h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #080B46;
+}
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.login-container button {
+  width: 70%;
+  padding: 10px;
+  background: #eff2f4;
+  color: #080B46;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  box-shadow: #56576c 0px 4px 6px -1px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.login-container button:hover {
+  background: #D5E1F0;
+}
+.login-container label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #080B46;
+}
+.forgot-link {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  color: #080B46;
+  text-decoration: none;
+  font-size: 14px;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.switch-label {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #080B46;
+  font-weight: normal;
+  cursor: pointer;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 22px;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+.switch input:checked + .slider {
+  background-color: #080B46;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.logo-login {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 600px) {
+  body {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .login-container {
+    width: 95vw;
+    min-width: 0;
+    margin-left: 0;
+    padding: 24px 10px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .logo-login {
+    width: 70vw;
+    max-width: 200px;
+  }
+  .login-container input,
+  .input-icon-container input {
+    width: 100%;
+    font-size: 15px;
+  }
+  .login-container button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
