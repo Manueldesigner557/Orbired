@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbired Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+   <div class="sidebar-logo-box">
+    <img src="./logo_orbired.png" alt="Orbired Logo" class="sidebar-logo">
+   </div>
+    <nav>
+      <ul>
+        <li><span class="icon">&#128179;</span> Transferencias</li>
+        <li><span class="icon">&#128274;</span> Cerrar sesión</li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <header class="main-header">
+      <button class="menu-btn" id="menuBtn">&#9776;</button>
+      <div class="header-actions">
+        <button class="simulator-btn">SIMULADOR &#128425;</button>
+        <span class="user-icon">&#128100;</span>
+      </div>
+    </header>
+    <section class="table-section">
+      <div class="table-actions">
+        <button class="select-columns-btn">Elegir Columnas</button>
+        <button class="download-btn">&#128190; Descargar Reporte</button>
+        <input type="text" class="search-input" placeholder="Buscar:">
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Creado por</th>
+            <th>Cliente</th>
+            <th>Destinatario</th>
+            <th>T. Documento</th>
+            <th>N. Documento</th>
+            <th>N. Cuenta</th>
+            <th>T. Cuenta</th>
+            <th>Valor</th>
+            <th>Valor Bs.</th>
+            <th>Fecha de Creación</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ede Sur</td>
+            <td>Ede Sur</td>
+            <td>Ede Sur</td>
+            <td>CC</td>
+            <td>27649673</td>
+            <td>4245289796</td>
+            <td>Móvil</td>
+            <td>$2,380.95</td>
+            <td>$2,380.95</td>
+            <td>14/09/2025 18:12 PM</td>
+            <td><button class="start-btn">Iniciar</button></td>
+          </tr>
+          <!-- Más filas aquí -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+ <script>
+  const menuBtn = document.getElementById('menuBtn');
+  const sidebar = document.getElementById('sidebar');
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-hidden');
+    document.body.classList.toggle('sidebar-collapsed');
+  });
+</script>
+</body>
+</html>
